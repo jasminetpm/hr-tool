@@ -81,7 +81,7 @@ public class EmployeeService {
         // 4. Logic for Manager Promotion
         if (epd.isManager()) {
             DeptManager newDm = new DeptManager(emp, newDept, epd.getPromoteFromDate(), epd.getPromoteToDate());
-            List<DeptManager> managers = emp.getDeptMgt();
+            List<DeptManager> managers = emp.getDeptMgr();
             Collections.sort(managers);
             if (!managers.isEmpty()) {
                 DeptManager last = managers.get(managers.size() - 1);

@@ -63,7 +63,7 @@ public class Employees {
 
     @OneToMany(mappedBy="employee", cascade = CascadeType.ALL)
     @ToString.Exclude
-    private List<DeptManager> deptMgt;
+    private List<DeptManager> deptMgr;
 
     @OneToMany(mappedBy="employee", cascade = CascadeType.ALL)
     @ToString.Exclude
